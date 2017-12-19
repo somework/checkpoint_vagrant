@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
     v.cpus = 1
   end
 
-  config.vm.provision "file", source: "./snx_install_linux30.sh", destination: "~/snx_install_linux30.sh"
+  config.vm.provision "file", source: "./snx_install_linux30.sh", destination: "/tmp/snx_install_linux30.sh"
   config.vm.provision "shell", path: "install.sh"
 
 end
